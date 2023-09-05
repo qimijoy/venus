@@ -1,0 +1,44 @@
+.header-main {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	background-color: black;
+}
+
+.header-content {
+	position: relative;
+	width: 1024px;
+	height: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	background: black url(venus.png) no-repeat center top/contain;
+}
+
+.header-content__title {
+	position: absolute;
+	left: 50%;
+	margin: 0;
+	font-family: "Playfair Display", serif;
+	font-weight: normal;
+	font-size: 3.5em;
+	letter-spacing: 10px;
+	text-shadow: 3px 3px 3px rgba(201, 120, 95, 0.7);
+	color: white;
+	transform: translate(-50%, -50%);
+}
+
+.header-content__title:before {
+	content: attr(data-text);
+	position: absolute;
+	transform-origin: bottom;
+	transform: rotateX(180deg);
+	line-height: 1em;
+	background: linear-gradient(0deg, #ffcd93 0, rgba(255, 255, 255, 0) 85%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: rgba(0, 0, 0, 0);
+	opacity: 0.5;
+	text-shadow: none;
+}
