@@ -1,46 +1,67 @@
+@import '../../common/vars.less';
+
 .header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+
 	background-color: black;
+	background-image: url(../assets/images/venus.webp);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 
-	&__content {
-		//position: relative;
-		width: 1024px;
-		height: 1024px;
-		//margin: 0 auto;
+	width: 100%;
+	min-height: 100vw;
 
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background: black url(../assets/images/venus.webp) no-repeat center top/contain;
-		background-size: auto;
+	@media @mobile-plus {
+		min-height: 600px;
 	}
 
-	&__content-title {
-		//position: relative;
+	@media @tablets-minus {
+		min-height: 720px;
+	}
+
+	@media @tablets {
+		min-height: 1024px;
+	}
+
+	&__title {
+		position: relative;
 		margin: 0;
-		font-family: "Playfair Display", serif;
-		font-weight: normal;
-		font-size: 3.5em;
+		font-family: "Playfair Display", 'Times New Roman', serif;
+		font-size: 2rem;
 		letter-spacing: 10px;
 		text-shadow: 3px 3px 3px rgba(201, 120, 95, 0.7);
 		color: white;
-		transform: translate(-50%, -50%);
+
+		@media @mobile-plus {
+			font-size: 2.5rem;
+		}
+
+		@media @tablets-minus {
+			font-size: 3rem;
+		}
+
+		@media @tablets {
+			font-size: 3.5rem;
+		}
 
 		&:before {
 			content: attr(data-text);
 			position: absolute;
+
 			transform-origin: bottom;
 			transform: rotateX(180deg);
-			line-height: 1em;
+
+			line-height: 1.1em;
+			color: rgba(0, 0, 0, 0);
+			text-shadow: none;
+
 			background: linear-gradient(0deg, #ffcd93 0, rgba(255, 255, 255, 0) 85%);
 			background-clip: text;
-			-webkit-background-clip: text;
-			color: rgba(0, 0, 0, 0);
-			opacity: 0.5;
-			text-shadow: none;
+			opacity: 0.7;
 		}
 	}
 }

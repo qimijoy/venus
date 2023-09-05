@@ -7,10 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	//
 	// setTimeout(removeLoader, 1000);
 
-
-  // Проверяем, в какой позиции находится скролл при загрузке и скрываем стрелки, если нужно
-  // showHideArrows();
-
   // При скролле
   // window.addEventListener('scroll', () => showHideArrows())
 
@@ -65,24 +61,4 @@ document.addEventListener('DOMContentLoaded', () => {
   //   slider.prop("src", images[curr_img]);
   //   prev_btn.prop("disabled", false);
   // });
-
-  // =====================================================================
-  // function showHideArrows() {
-  //   // Показываем/скрываем стрелки наверх
-  //   if ($(window).scrollTop() > $("#top").height()) {
-  //     $(".arror-nav_direction-up").fadeIn();
-  //   } else {
-  //     $(".arror-nav_direction-up").fadeOut();
-  //   }
-	//
-  //   // Показываем/скрываем стрелки вниз
-  //   if (
-  //     $(window).scrollTop() + window.innerHeight >=
-  //     $(document).height() - 10
-  //   ) {
-  //     $(".arror-nav_direction-down").fadeOut();
-  //   } else {
-  //     $(".arror-nav_direction-down").fadeIn();
-  //   }
-  // }
 });
