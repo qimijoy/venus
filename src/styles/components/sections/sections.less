@@ -1,18 +1,18 @@
 @import '../../common/vars.less';
 
 .section {
-	padding: 0 10px;
+	padding: 0 10px 20px;
 
 	@media @mobile {
-		padding: 0 20px;
+		padding: 0 20px 20px;
 	}
 
 	@media @tablets {
-		padding: 0 30px;
+		padding: 0 30px 20px;
 	}
 
 	@media @desktops {
-		padding: 0 40px;
+		padding: 0 40px 20px;
 	}
 
 	&_white {
@@ -23,37 +23,27 @@
 		background-color: black;
 	}
 
-	@import 'quote/quote.less';
-}
+	&__text {
+		margin: 0;
+		line-height: 1.5;
+	}
 
-/* --------------------- INFO INTRO --------------------- */
-.info-section_intro {
-	background-color: black;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
-}
+	&__text_white {
+		color: white;
+	}
 
-@media screen and (max-width: 1200px) {
-	.info-section_intro {
-		flex-flow: column nowrap;
+	&__text_black {
+		color: black;
+	}
+
+	&__text_center {
+		align-self: center;
+		text-align: center;
 	}
 }
 
-.info-section__img {
-	max-width: 768px;
-	margin-right: 40px;
-	margin-bottom: 20px;
-}
-
-.info-section__text {
-	margin: 0;
-	color: white;
-	align-self: center;
-	text-align: center;
-	line-height: 1.3;
-}
+@import 'quote/quote.less';
+@import 'intro/intro.less';
 
 /* --------------------- INFO NIGHTSKY --------------------- */
 .info-section_nightsky {
