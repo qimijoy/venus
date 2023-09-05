@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const removeLoader = () => {
-		document.querySelector('body').classList.remove("loading");
-		document.querySelector('.preloader').classList.add('preloader_hide');
-	}
-
-	setTimeout(removeLoader, 1000);
+	console.log('Hello, world!')
+	// const removeLoader = () => {
+	// 	document.querySelector('body').classList.remove("loading");
+	// 	document.querySelector('.preloader').classList.add('preloader_hide');
+	// }
+	//
+	// setTimeout(removeLoader, 1000);
 
 
   // Проверяем, в какой позиции находится скролл при загрузке и скрываем стрелки, если нужно
