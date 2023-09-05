@@ -1,54 +1,29 @@
-/* =============================== MAIN ================================ */
-.main-content__article {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	background-color: black;
-}
+@import '../../common/vars.less';
 
-.info-section {
-	padding: 30px 90px;
-	background-color: white;
-}
+.section {
+	padding: 0 10px;
 
-/* ---------------------INFO QUOTE--------------------- */
-.info-section_quote {
-	background-color: black;
-}
+	@media @mobile {
+		padding: 0 20px;
+	}
 
-.info__quote {
-	margin: 0;
-	padding: 30px;
-	color: white;
-	position: relative;
-	text-align: center;
-}
+	@media @tablets {
+		padding: 0 30px;
+	}
 
-.info__quote:before,
-.info__quote:after {
-	font-size: 45px;
-	color: #9e785d;
-	position: absolute;
-	height: 3px;
-	left: 30px;
-	right: 30px;
-	line-height: 0.5;
-	background: linear-gradient(
-		to right,
-		transparent,
-		#e7711c 47%,
-		transparent 47%
-	),
-	linear-gradient(to right, transparent 53%, #e7711c 53%, transparent);
-}
+	@media @desktops {
+		padding: 0 40px;
+	}
 
-.info__quote:before {
-	content: "\201C";
-	top: 30px;
-}
-.info__quote:after {
-	content: "\201D";
-	bottom: 30px;
+	&_white {
+		background-color: white;
+	}
+
+	&_black {
+		background-color: black;
+	}
+
+	@import 'quote/quote.less';
 }
 
 /* --------------------- INFO INTRO --------------------- */
