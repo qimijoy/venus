@@ -1,0 +1,31 @@
+@import '../../../common/vars.less';
+
+.section__future {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@media @tablets {
+		flex-direction: row;
+	}
+
+	&:last-child {
+		margin-bottom: 40px;
+	}
+}
+
+.section__future-img {
+	width: 400px;
+	margin-right: 0;
+	margin-bottom: 20px;
+
+	@media @tablets {
+		margin-right: 40px;
+		margin-bottom: 0;
+	}
+}
+
+.section__future-img_round {
+	border-radius: 50%;
+}
