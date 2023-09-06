@@ -11,7 +11,6 @@ import size from "gulp-size";
 export default () => {
 	return gulp.src([
 		paths.src.js,
-		// 'node_modules/chart.js/dist/chart.js',
 	], { sourcemaps: true })
 		.pipe(plumber({	errorHandler: notify.onError(error => ({ title: 'JS',	message: error.message }))}))
 		.pipe(size({ title: 'JS. Before:'}))

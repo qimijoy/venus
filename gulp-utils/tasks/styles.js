@@ -14,6 +14,7 @@ import groupCssMediaQueries from 'gulp-group-css-media-queries';
 export default () => {
 	return gulp.src([
 		'node_modules/normalize.css/normalize.css',
+		'node_modules/swiper/swiper-bundle.css',
 		paths.src.css,
 	], { sourcemaps: true })
 		.pipe(plumber({	errorHandler: notify.onError(error => ({ title: 'CSS',	message: error.message }))}))
