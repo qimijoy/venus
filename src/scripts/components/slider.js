@@ -14,5 +14,3 @@ const slider = new Swiper('#slider', {
 		clickable: true,
 	},
 });
-
-console.log(slider)
