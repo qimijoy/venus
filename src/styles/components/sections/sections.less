@@ -41,58 +41,28 @@
 		align-self: center;
 		text-align: center;
 	}
+
+	&__header {
+		font-family: "Playfair Display", "Times New Roman", serif;
+		font-size: 3.5rem;
+		line-height: 1.3;
+		text-align: center;
+	}
+
+	&__header_black {
+		color: black;
+	}
+
+	&__header_white {
+		color: white;
+	}
 }
 
+@import 'facts/facts.less';
 @import 'quote/quote.less';
 @import 'intro/intro.less';
 @import 'nightsky/nightsky.less';
 
-
-/* --------------------- INFO FACTS --------------------- */
-.info-section_facts {
-	background-color: white;
-}
-
-.info-section__header {
-	color: black;
-	text-align: center;
-	font-size: 3em;
-	font-family: "Playfair Display", serif;
-	margin-top: 30px;
-	line-height: 1.3;
-}
-
-.info-section__header_color-white {
-	color: white;
-}
-
-.facts {
-	margin-top: 50px;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	align-items: flex-start;
-}
-
-.fact__item {
-	max-width: 256px;
-	margin: 0 80px 30px 80px;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
-}
-
-.info-section__text_black {
-	color: black;
-}
-
-.info-section__img_facts {
-	width: 200px;
-	margin: 0;
-	border-radius: 50%;
-	margin-bottom: 25px;
-}
 
 /* --------------------- INFO VENUS WITH WATER --------------------- */
 .info-section_venus-water {
