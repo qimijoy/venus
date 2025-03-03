@@ -1,0 +1,35 @@
+.section__quote {
+	position: relative;
+	margin: 0;
+	padding: 30px;
+
+	color: white;
+	text-align: center;
+
+	&:before, &:after {
+		position: absolute;
+		left: 30px;
+		right: 30px;
+
+		font-size: 3rem;
+		color: #9e785d;
+		line-height: 0.7;
+
+		height: 3px;
+		background: linear-gradient(to right, transparent, #e7711c 45%, transparent 45%),
+		linear-gradient(to right, transparent 55%, #e7711c 55%, transparent);
+	}
+
+	&:before {
+		content: "\201C";
+		top: 30px;
+	}
+	&:after {
+		content: "\201D";
+		bottom: 30px;
+	}
+}
+
+.section__quote-text {
+	margin-top: 15px;
+}

@@ -1,0 +1,26 @@
+@import '../../../common/vars.less';
+
+.section__nightsky {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	@media @tablets {
+		flex-direction: row;
+	}
+}
+
+.section__nightsky-img {
+	border-radius: 5%;
+	width: 100%;
+	max-width: 500px;
+	margin-right: 0;
+	margin-bottom: 20px;
+
+	@media @tablets {
+		max-width: 600px;
+		margin-bottom: 0;
+		margin-right: 40px;
+	}
+}

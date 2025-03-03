@@ -1,0 +1,81 @@
+@import '../../common/vars.less';
+
+.section {
+	padding: 0 10px 40px;
+
+	@media @mobile {
+		padding: 0 20px 40px;
+	}
+
+	@media @tablets {
+		padding: 0 30px 40px;
+	}
+
+	@media @desktops {
+		padding: 0 40px 40px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&_white {
+		background-color: white;
+	}
+
+	&_black {
+		background-color: black;
+	}
+
+	&__text {
+		margin: 0;
+		line-height: 1.5;
+	}
+
+	&__text_white {
+		color: white;
+	}
+
+	&__text_black {
+		color: black;
+	}
+
+	&__text_center {
+		align-self: center;
+		text-align: center;
+	}
+
+	&__header {
+		font-family: "Playfair Display", "Times New Roman", serif;
+		font-size: 3.5rem;
+		line-height: 1.3;
+		text-align: center;
+
+		@media @mobile {
+			font-size: 3rem;
+		}
+
+		@media @tablets {
+			font-size: 2.5rem;
+		}
+
+		@media @desktops {
+			font-size: 2rem;
+		}
+	}
+
+	&__header_black {
+		color: black;
+	}
+
+	&__header_white {
+		color: white;
+	}
+}
+
+@import 'facts/facts.less';
+@import 'future/future.less';
+@import 'quote/quote.less';
+@import 'intro/intro.less';
+@import 'nightsky/nightsky.less';
+@import 'venus-water/venus-water.less';
